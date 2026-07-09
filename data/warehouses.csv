@@ -1,0 +1,6 @@
+warehouse_id,warehouse_name,city,province
+1,Montreal Warehouse,Montreal,Quebec
+2,Toronto Warehouse,Toronto,Ontario
+3,Calgary Warehouse,Calgary,Alberta
+4,Vancouver Warehouse,Vancouver,British Columbia
+5,Halifax Warehouse,Halifax,Nova Scotia
