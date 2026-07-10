@@ -1,44 +1,55 @@
 # Inventory & Supply Chain SQL Analysis
 
-A portfolio project demonstrating SQL skills for **Procurement**, **Supply Chain**, and **Operations Analyst** roles.
+A portfolio project demonstrating practical SQL skills for **Supply Chain**, **Inventory Management**, and **Operations Analysis** using **MySQL**.
 
-This project analyzes inventory, sales, warehouse, and procurement data using MySQL to answer real business questions related to inventory management, supplier performance, and operational decision-making.
+This project analyzes a simulated retail inventory dataset to answer real business questions related to inventory management, warehouse performance, sales analysis, purchase order analysis, and operational decision-making.
 
 ---
 
-## Project Overview
+# Project Overview
 
-The project simulates the work of a Supply Chain Analyst in a retail distribution company.
+This project simulates the work of a **Supply Chain Analyst** in a retail distribution company.
 
-Using SQL, the project explores:
+Using SQL, the project analyzes:
 
 - Product performance
 - Inventory management
-- Sales analysis
+- Sales performance
 - Warehouse performance
-- Procurement analysis
-- Supplier performance
+- Purchase order analysis
+- Supplier delivery analysis
 - Business recommendations
 
-The analysis progresses from basic SQL queries to more advanced business-oriented analytical questions.
+The project progresses from fundamental SQL concepts to real-world business analysis.
 
 ---
 
-## Dataset
+# Project Highlights
+
+- Solved **80+ SQL practice and business queries**
+- Worked with **5 relational database tables**
+- Analyzed inventory, sales, warehouse, and purchase order data
+- Applied SQL to solve real business problems
+- Generated business recommendations from analytical findings
+- Built as part of a Supply Chain & Business Analytics portfolio
+
+---
+
+# Dataset
 
 The project uses a simulated retail inventory dataset.
 
-| Dataset         | Records |
-|-----------------|---------:|
-| Products        | 100 |
-| Warehouses      | 05 |
-| Inventory       | 200 |
-| Sales           | 1,000 |
+| Dataset | Records |
+|----------|---------:|
+| Products | 100 |
+| Warehouses | 5 |
+| Inventory | 200 |
+| Sales | 1,000 |
 | Purchase Orders | 300 |
 
 ---
 
-## Technologies Used
+# Technologies Used
 
 - MySQL 8
 - phpMyAdmin
@@ -48,7 +59,7 @@ The project uses a simulated retail inventory dataset.
 
 ---
 
-## Project Structure
+# Project Structure
 
 ```text
 sql-inventory-analysis/
@@ -88,7 +99,7 @@ sql-inventory-analysis/
 
 # Database Design
 
-The project uses five relational tables.
+The project consists of five relational tables:
 
 - Products
 - Warehouses
@@ -96,11 +107,19 @@ The project uses five relational tables.
 - Sales
 - Purchase Orders
 
-Relationships are created using Product ID and Warehouse ID.
+Primary and foreign keys are used to connect product, warehouse, inventory, sales, and purchase order information.
+
+> **Database Schema**
+
+*(Add `database/schema.png` here once created.)*
+
+```markdown
+![Database Schema](database/schema.png)
+```
 
 ---
 
-# Skills Demonstrated
+# SQL Skills Demonstrated
 
 ## SQL Fundamentals
 
@@ -117,74 +136,57 @@ Relationships are created using Product ID and Warehouse ID.
 - MIN()
 - MAX()
 
-## GROUP BY
+## Data Analysis
 
-- Business aggregation
-- Category analysis
-- Warehouse analysis
-- Supplier analysis
-
-## Joins
-
-- INNER JOIN
-- LEFT JOIN
-
-## Business Analysis
-
-- Inventory valuation
-- Sales performance
-- Procurement analysis
-- Supplier analysis
-- Warehouse analysis
-
----
-
-# Business Questions Answered
-
-The project answers business questions such as:
-
-- Which products are below their reorder point?
-- Which products generate the highest revenue?
-- Which warehouses hold the most inventory?
-- Which warehouse generates the highest revenue?
-- Which categories sell the most units?
-- Which supplier has the highest purchasing spend?
-- Which supplier has the longest delivery lead time?
-- Which products are slow-moving?
-- Which products should be reordered?
-- Which products are overstocked?
-
----
-
-# Portfolio Case Study
-
-The final section focuses on solving real business problems.
-
-The analysis includes:
-
-- Products at risk of stock-out
-- Slow-moving inventory
-- Inventory value analysis
-- Warehouse inventory analysis
-- Category revenue analysis
-- Supplier delivery performance
-- Purchasing recommendations
-- Inventory optimization recommendations
-
----
-
-# Sample SQL Concepts Used
-
-- Filtering
-- Sorting
-- Aggregate Functions
 - GROUP BY
 - HAVING
 - INNER JOIN
 - LEFT JOIN
 - Date Functions
 - CASE Statements
-- Inventory KPIs
+
+## Business Analysis
+
+- Inventory Analysis
+- Sales Analysis
+- Warehouse Analysis
+- Purchase Order Analysis
+- Inventory Valuation
+- Business KPI Analysis
+
+---
+
+# Business Questions Answered
+
+Examples of business questions solved in this project include:
+
+- Which products are below their reorder point?
+- Which products generate the highest revenue?
+- Which warehouses hold the highest inventory?
+- Which warehouse generates the highest revenue?
+- Which product categories sell the most units?
+- Which suppliers account for the highest purchasing spend?
+- Which suppliers have the longest average delivery lead time?
+- Which products are slow-moving?
+- Which products should be reordered?
+- Which products appear to be overstocked?
+
+---
+
+# Portfolio Case Study
+
+The final section of the project focuses on solving practical business problems.
+
+The analysis includes:
+
+- Products at risk of stock-out
+- Inventory value analysis
+- Slow-moving inventory
+- Warehouse inventory analysis
+- Sales performance analysis
+- Purchase order delivery analysis
+- Purchasing recommendations
+- Inventory optimization recommendations
 
 ---
 
@@ -203,7 +205,7 @@ LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 ```
 
-Detailed instructions are available in:
+Detailed import instructions are available in:
 
 ```text
 database/import_data.md
@@ -213,54 +215,89 @@ database/import_data.md
 
 # Key Business Insights
 
-Examples of insights generated during the analysis:
+The SQL analysis identified several operational insights, including:
 
-- Products below reorder point were identified for replenishment.
-- High inventory value products were identified.
-- Slow-moving inventory was detected.
-- Warehouse inventory distribution was analyzed.
-- Supplier purchasing trends were evaluated.
-- Sales performance was analyzed across product categories.
+- Products below their reorder points requiring replenishment
+- High-value inventory requiring closer monitoring
+- Slow-moving products contributing to excess inventory
+- Warehouse inventory distribution
+- Supplier delivery performance trends
+- Sales performance across different product categories
+
+---
+
+# Business Recommendations
+
+Based on the analysis, the following recommendations were developed:
+
+- Prioritize replenishment for products below reorder point.
+- Reduce purchasing for slow-moving products.
+- Monitor inventory value to reduce holding costs.
+- Review supplier delivery performance regularly.
+- Optimize warehouse inventory distribution.
+- Use sales trends to improve purchasing decisions.
+
+Detailed recommendations are available in:
+
+```text
+docs/business_recommendations.md
+```
 
 ---
 
 # Future Improvements
 
-Future enhancements could include:
+Future enhancements for this project include:
 
 - Window Functions
 - Common Table Expressions (CTEs)
 - Views
 - Stored Procedures
 - Inventory ABC Classification
-- Power BI Dashboard
-- Excel Dashboard
+- Interactive Excel Dashboard
+- Interactive Power BI Dashboard
+
+---
+
+# Related Projects
+
+This repository is part of a complete Supply Chain Analytics portfolio.
+
+- SQL Inventory & Supply Chain Analysis
+- Excel Inventory Dashboard *(In Progress)*
+- Power BI Inventory Dashboard *(Planned)*
 
 ---
 
 # About This Project
 
-This project was created as part of a learning portfolio for entry-level Procurement, Supply Chain, and Operations Analyst roles.
+This project was created to demonstrate practical SQL skills applied to inventory and supply chain business scenarios using a simulated retail dataset.
 
 The objective is to demonstrate the ability to:
 
 - Analyze business data using SQL
 - Solve operational business problems
 - Generate meaningful business insights
-- Present analytical findings through structured SQL queries
+- Support business decision-making through data analysis
 
 ---
 
-## Author
+# Author
 
 **Nusrat Jahan Kashfia**
 
-Master of Engineering (Quality Systems Engineering)  
+**Master of Engineering (Quality Systems Engineering)**  
 Concordia University
 
-Interested in:
+**Areas of Interest**
 
+- Supply Chain Management
+- Inventory Management
 - Procurement
-- Supply Chain
-- Operations
+- Operations Analysis
 - Business Analytics
+- Data Analytics
+
+---
+
+⭐ *If you found this project interesting or helpful, feel free to explore the repository or connect with me on LinkedIn.*
