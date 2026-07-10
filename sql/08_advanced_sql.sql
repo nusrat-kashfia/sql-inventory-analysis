@@ -125,7 +125,7 @@ FROM purchase_orders;
 /*
 9. Create a supplier scorecard using multiple KPIs
 */
-supplier_name,
+SELECT supplier_name,
 COUNT(*) AS total_orders,
 SUM(
     CASE
